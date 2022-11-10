@@ -24,15 +24,15 @@ public class ex06 {
 		while (n1Suma != n1) {
 			n1Suma = n1Suma + n1;
 		}
-		
+
 		while (n2Suma != n2) {
 			n2Suma = n2Suma + n2;
 		}
-		
+
 		int resultatSuma = n1Suma + n2Suma;
-		
+
 		System.out.println(n1 * n2);
-		
+
 		System.out.println(resultatSuma);
 
 	}

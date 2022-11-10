@@ -18,17 +18,13 @@ public class ex07 {
 		System.out.print("Segon número: ");
 		int n2 = sc.nextInt();
 		sc.close();
-		
+
 		System.out.println("\nDiferència:\n" + (n1 - n2));
-		
-		
+
 		int contador = 0;
-		int i = 0;
-		
+
 		System.out.println("Nombre de números: " + contador);
-		
-		
-		
+
 	}
 
 }
