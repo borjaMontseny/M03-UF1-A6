@@ -3,14 +3,11 @@ import java.util.Scanner;
 public class ex11 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		/*
 		 * Llegeix una seqüència de notes obtingudes per un grup d’alumnes acabada en -1
 		 * i escriu quants alumnes han obtingut les qualificacions MD, I, S, B, N, E.
 		 */
-
-		String enunciat = "Nota (-1 per acabar): ";
 
 		int contadorMD = 0;
 		int contadorI = 0;
@@ -19,29 +16,32 @@ public class ex11 {
 		int contadorN = 0;
 		int contadorEx = 0;
 
-		double nota = 0;
+		String enunciat = "Nota (-1 per acabar): ";
+		
+		System.out.print(enunciat);
 		Scanner sc = new Scanner(System.in);
+		double nota = sc.nextDouble();
 
 		while (nota != -1) {
 			System.out.print(enunciat);
 			nota = sc.nextDouble();
 
-			if (nota >= 0 && nota <= 3) {
+			if (nota >= 0 && nota < 3) {
 				contadorMD++;
-			} else if (nota >= 3 && nota <= 5) {
+			} else if (nota > 3 && nota < 5) {
 				contadorI++;
-			} else if (nota >= 5 && nota <= 6) {
+			} else if (nota >= 5 && nota < 6) {
 				contadorS++;
-			} else if (nota > 6 && nota <= 7) {
+			} else if (nota >= 6 && nota < 7) {
 				contadorB++;
-			} else if (nota > 7 && nota <= 9) {
+			} else if (nota >= 7 && nota < 9) {
 				contadorN++;
-			} else if (nota > 9 && nota <= 10) {
+			} else if (nota >= 9 && nota < 10) {
 				contadorEx++;
 			}
 
 		}
-		
+
 		sc.close();
 
 		System.out.println("\nAlumnes amb MD: " + contadorMD);
@@ -52,7 +52,7 @@ public class ex11 {
 
 		System.out.println("Alumnes amb B: " + contadorB);
 
-		System.out.println("Alumnes amb B: " + contadorN);
+		System.out.println("Alumnes amb N: " + contadorN);
 
 		System.out.println("Alumnes amb Ex: " + contadorEx);
 	}

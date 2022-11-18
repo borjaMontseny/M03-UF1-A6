@@ -10,18 +10,16 @@ public class ex10 {
 		 * introdueixi un 0), i escriu la mitjana aritmètica dels nombres entrats.
 		 */
 
-
-
 		double contador = 0;
-		
+
 		String enunciat = "Escriu número (0 per acabar): ";
 
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.print(enunciat);
 		double num = sc.nextDouble();
 		double sumaNums = num;
-		
+
 		while (num != 0) {
 
 			System.out.print(enunciat);
